@@ -1,5 +1,4 @@
 #include <a_samp>
-//#include <YSI\y_bit> // don't know why but i like this <3
 
 //Dont touch if dont understood.
 #define         PUB->%0(%1)                   public %0(%1)
@@ -8,8 +7,7 @@
 //static <3
 static
     ac_MoneyVal[MAX_PLAYERS],
-    ac_MoneyTick[MAX_PLAYERS],
-    BitArray:ac_MoneyValid<MAX_PLAYERS>,   
+    ac_MoneyTick[MAX_PLAYERS]  
 ;
 
 //begin!
