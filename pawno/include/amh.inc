@@ -16,7 +16,6 @@ PUB->OnPlayerUpdate(playerid)
     if (GetPlayerMoney(playerid) != ac_MoneyVal[playerid])
     {
         ResetPlayerMoney(playerid);
-        Bit_Set(ac_MoneyValid, playerid, false);
         GivePlayerMoney(playerid, ac_MoneyVal[playerid]);
     }
     #if defined kon_OnPlayerUpdate
@@ -60,7 +59,6 @@ PUB->OnPlayerDisconnect(playerid, reason)
 STR->kon_GivePlayerMoney(playerid, amount)
 {
     ac_MoneyVal[playerid] = GetPlayerMoney(playerid);
-    Bit_Set(ac_MoneyValid, playerid, true);
     return GivePlayerMoney(playerid, amount);
 }
 
